@@ -7,8 +7,10 @@ Theorie kun je vinden op: https://www.edutorial.nl/dbq/introductie/
 ### Queries reisbureau
 * Geef de namen van de klanten die in Rotterdam wonen
 
+SELECT naam FROM `klanten` WHERE plaats = 'rotterdam';
 
 * Geef de namen van de klanten die geen reis geboekt hebben.
+
 
 
 * Hoeveel klanten komen er niet uit Rotterdam
