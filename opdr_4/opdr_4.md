@@ -11,12 +11,16 @@ SELECT naam FROM `klanten` WHERE plaats = 'rotterdam';
 
 * Geef de namen van de klanten die geen reis geboekt hebben.
 
-
+SELECT k.Naam FROM klanten k LEFT JOIN boekingen b ON k.Klantnummer = b.Klantnummer WHERE b.Klantnummer IS NULL;
 
 * Hoeveel klanten komen er niet uit Rotterdam
 
+SELECT count(*) FROM klanten where not plaats = "rotterdam";
+
+Dat zijn er 13
 
 * Hoeveel reizen hebben als bestemming Afrika?
+
 
 
 * Hoeveel moeten de klanten, die naar Azië gaan, in totaal betalen?
