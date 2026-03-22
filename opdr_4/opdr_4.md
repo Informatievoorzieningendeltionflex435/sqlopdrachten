@@ -7,15 +7,15 @@ Theorie kun je vinden op: https://www.edutorial.nl/dbq/introductie/
 ### Queries reisbureau
 * Geef de namen van de klanten die in Rotterdam wonen
 
-SELECT naam FROM `klanten` WHERE plaats = 'rotterdam';
+███SELECT naam FROM `klanten` WHERE plaats = 'rotterdam';
 
 * Geef de namen van de klanten die geen reis geboekt hebben.
 
-SELECT k.Naam FROM klanten k LEFT JOIN boekingen b ON k.Klantnummer = b.Klantnummer WHERE b.Klantnummer IS NULL;
+███SELECT k.Naam FROM klanten k LEFT JOIN boekingen b ON k.Klantnummer = b.Klantnummer WHERE b.Klantnummer IS NULL;
 
 * Hoeveel klanten komen er niet uit Rotterdam
 
-SELECT count(*) FROM klanten where not plaats = "rotterdam";
+███SELECT count(*) FROM klanten where not plaats = "rotterdam";
 
 Dat zijn er 13
 
